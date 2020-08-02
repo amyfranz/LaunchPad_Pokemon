@@ -1,0 +1,31 @@
+.pokedexArea {
+  padding: 1vw;
+  background-color: #00b7ba;
+  width: 48vw;
+  min-height: 96.3vh;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.search input {
+  width: 97%;
+}
+.info {
+  text-align: center;
+  color: #535658;
+}
+
+h4 {
+  margin-top: 1em;
+}
+
+.pokedexArea .info .button {
+  align-items: center;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 2em;
+}

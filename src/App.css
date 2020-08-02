@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+input {
+  border: none;
+  background-color: #6a6f73;
+  color: #ffffff;
+  padding: 0.3vw;
+  border-radius: 3vw;
+}
+
+.button {
+  width: 5%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #6a6f73;
+  border-radius: 10em;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  text-align: center;
+  width: 100%;
+  height: 2vw;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+.btn:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+  border-radius: 10em;
+}
+.btn:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+h2 {
+  text-transform: capitalize;
+}
+img {
+  width: 20%;
+  background-color: white;
+  border-radius: 1em;
+  margin: 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-group {
+  padding: 1%;
+  background-color: #fed356;
+  width: 98%;
+  min-height: 96.3vh;
+  color: #535658;
 }

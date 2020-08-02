@@ -1,0 +1,13 @@
+.pokemonLineup {
+  height: 50vh;
+  overflow-x: scroll;
+}
+.pokemonList {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pokemonList img {
+  width: 70%;
+}

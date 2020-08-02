@@ -1,0 +1,13 @@
+.flex {
+  display: flex;
+  margin-top: 1em;
+}
+
+.flex input {
+  width: 23vw;
+}
+
+.pokemonData .button {
+  width: 40%;
+  margin: 1em 30%;
+}
